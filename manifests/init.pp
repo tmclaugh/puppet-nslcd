@@ -24,22 +24,4 @@ class nslcd ($ldap_nss_uri,
 		require => File["/etc/nslcd.conf"],
 		subscribe => File["/etc/nslcd.conf"]
 	}
-
-	replace {"enable_nss_ldap_passwd":
-		file => "/etc/nsswitch.conf",
-		pattern => "^passwd:.*(?!ldap)",
-		replacement => "passwd:\t\tfiles ldap",
-	}
-	
-	replace {"enable_nss_ldap_shadow":
-		file => "/etc/nsswitch.conf",
-		pattern => "^shadow:.*(?!ldap)",
-		replacement => "shadow:\t\tfiles ldap",
-	}
-	
-	replace {"enable_nss_ldap_group":
-		file => "/etc/nsswitch.conf",
-		pattern => "^group:.*(?!ldap)",
-		replacement => "group:\t\tfiles ldap",
-	}
 }
