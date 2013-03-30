@@ -1,0 +1,16 @@
+{
+  "name": "tom-tmclaugh-puppet-nslcd",
+  "author": "",
+  "description": "",
+  "license": "",
+  "project_page": "",
+  "source": "",
+  "summary": "",
+  "version": "",
+  "checksums": {
+    "Modulefile": "cd2fb802fcd5ff4c3c3e72cb9a50c5a8",
+    "manifests\\init.pp": "d131593130224cf5d8f02c9ec5fb9a04",
+    "templates\\nslcd.conf.erb": "adc52b623f52e98afcb9dd4cc2796ec6"
+  },
+  "dependencies": []
+}
