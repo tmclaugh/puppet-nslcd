@@ -15,7 +15,7 @@ class nslcd ($ldap_nss_uri,
 		group => "root",
 		mode => 600,
 		content => template("nslcd/nslcd.conf.erb"),
-		require => [Class["ldap"], Package["nss-pam-ldapd"]],
+		require => Package["nss-pam-ldapd"],
 	}
 
 	service { "nslcd" :
